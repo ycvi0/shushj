@@ -22,6 +22,7 @@ local devMode = true
 local ServerHop = loadstring(game:HttpGet("https://raw.githubusercontent.com/ycvi0/priv/refs/heads/main/util/jswork.lua"))
 local TestingLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/x6fg/MM2-Hopper/refs/heads/main/Libraries/UI-Library.lua"))()
 local Whitelisted = loadstring(game:HttpGet("https://raw.githubusercontent.com/x6fg/MM2-Hopper/refs/heads/main/Utils/Whitelisted.lua"))()
+queueteleport = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus and fluxus.queue_on_teleport)
 
 -- Wait until the game is fully loaded
 repeat wait() until game:IsLoaded()
@@ -205,5 +206,5 @@ else
 end
 
 Players.LocalPlayer.OnTeleport:Connect(function(State)
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ycvi0/shushj/refs/heads/main/na"))()
+		queueteleport("loadstring(game:HttpGet("https://raw.githubusercontent.com/ycvi0/shushj/refs/heads/main/ta"))()")
 end)
