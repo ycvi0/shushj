@@ -206,5 +206,5 @@ else
 end
 
 Players.LocalPlayer.OnTeleport:Connect(function(State)
-		queueteleport("loadstring(game:HttpGet("https://raw.githubusercontent.com/ycvi0/shushj/refs/heads/main/ta"))()")
+		queueteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/ycvi0/shushj/refs/heads/main/pa'))()")
 end)
