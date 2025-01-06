@@ -155,3 +155,6 @@ local values = {
     ["Orange Seer"] = 2,
     ["Yellow Seer"] = 1,
 }
+
+
+return values
