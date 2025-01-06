@@ -205,5 +205,5 @@ else
 end
 
 Players.LocalPlayer.OnTeleport:Connect(function(State)
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ycvi0/shushj/refs/heads/main/x"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ycvi0/shushj/refs/heads/main/na"))()
 end)
